@@ -47,6 +47,27 @@ wandb_run_name = 'gpt2' # 'run' + str(time.time())
 dataset = 'openwebtext'
 gradient_accumulation_steps = 5 * 8 # used to simulate larger batch sizes
 batch_size = 12 # if gradient_accumulation_steps > 1, this is the micro-batch size
+# model
+# gpt2 https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json
+#   n_layer = 12
+#   n_head  = 12
+#   n_embd  = 768
+#   n_ctx   = 1024
+# gpt2-medium https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-medium-config.json
+#   n_layer = 24
+#   n_head  = 16
+#   n_embd  = 1024
+#   n_ctx   = 1024
+# gpt2-large https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-large-config.json
+#   n_layer = 36
+#   n_head  = 20
+#   n_embed = 1280
+#   n_ctx   = 1024
+# gpt2-xl https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-xl-config.json
+#   n_layer = 48
+#   n_head  = 25
+#   n_embed = 1600
+#   n_ctx   = 1024
 block_size = 1024
 # model
 n_layer = 12
